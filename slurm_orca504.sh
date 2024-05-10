@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# AUTHOR: Andrew Molino - MIT - Gilliard Group
+
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=16
 #SBATCH --time=24:00:00

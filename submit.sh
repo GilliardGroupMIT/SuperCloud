@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# AUTHOR: Andrew Molino - MIT - Gilliard Group
+
 files=$(ls -1 | grep -c inp)
 
 if [ ! -f slurm_master ]; then
