@@ -14,6 +14,7 @@ module purge
 module load mpi/openmpi-4.1.5
 
 ORCA_PATH=$HOME/opt/chemistry/Orca_5.0.4
+export NBOEXE=$HOME/opt/chemistry/NBO6/nbo6/bin/nbo6.i4.exe
 
 JOBDIR="$PWD"
 export JOBDIR
