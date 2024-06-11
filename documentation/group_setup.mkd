@@ -69,6 +69,3 @@ You should see something like this:
 $ echo $ORCA_PATH
 /home/gridsan/amolino/gilliardlab_shared/opt/chemistry/Orca_504
 ```
-
-You now have access to the GilliardLab group directory.
-
