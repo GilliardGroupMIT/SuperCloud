@@ -17,17 +17,17 @@ The .bashrc file is used to set up the working environment every time you log in
 ```
 $ ls -a
 ```
-	
+
 You will see a list of files and directories, including some that start with a period, such as .bash_history, .bashrc, .profile, etc.
 
 To edit the .bashrc file using the nano text editor, use the following command:
-	
+
 ```
 $ nano .bashrc
 ```
-	
+
 At the end of the .bashrc file, add the following lines. Note that spacing is important, and the lines beginning with a period are indented. It is best to copy and paste the lines below into your .bashrc rather than typing them out to avoid typos.
-	
+
 ```
 if [ -f $HOME/gilliardlab_shared/.config/gilliardlab_config/aliases.sh ]; then
     . $HOME/gilliardlab_shared/.config/gilliardlab_config/aliases.sh
@@ -52,16 +52,8 @@ You should see a list of aliases. It should look something like this (note that 
 
 ```
 $ alias
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-alias andrew='echo "hello world!"'
 alias copyg16='cp $HOME/gilliardlab_shared/opt/utilities/slurm_scripts/slurm_gaussian16.sh'
 alias copyorca='cp $HOME/gilliardlab_shared/opt/utilities/slurm_scripts/slurm_orca504.sh'
-alias l='ls -CF'
-alias la='ls -A'
-alias ll='ls -alF'
-alias matt-call='salt-call'
-alias matt-minion='salt-minion'
-alias matt-proxy='salt-proxy'
 alias stream='less -S +F'
 ```
 
@@ -79,3 +71,4 @@ $ echo $ORCA_PATH
 ```
 
 You now have access to the GilliardLab group directory.
+
