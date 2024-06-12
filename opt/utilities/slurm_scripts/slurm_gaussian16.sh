@@ -12,11 +12,11 @@ input_files="*.com"
 
 module purge
 
-GILLIARDGRP=$HOME/gilliardlab_shared
-export g16root=$GILLIARDGRP/opt/chemistry/Gaussian16_A03
+GILLIARDLAB=/home/gridsan/groups/gilliardlab
+export g16root=$GILLIARDLAB/opt/chemistry/Gaussian16_A03
 export GAUSS_EXEDIR=$g16root/g16
 export GAUSS_SCRDIR=$g16root/scr
-NBOEXE=$GILLIARDGRP/opt/chemistry/NBO6/bin/nbo6.i4.exe
+NBOEXE=$GILLIARDLAB/opt/chemistry/NBO6/bin/nbo6.i4.exe
 
 JOBDIR="$PWD"
 export JOBDIR
