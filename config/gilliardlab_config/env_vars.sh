@@ -1,4 +1,4 @@
-export GILLIARDLAB=/home/gridsan/groups/gilliardlab
+GILLIARDLAB=/home/gridsan/groups/gilliardlab
 
 export PATH=$PATH:GILLIARDLAB/.local/bin
 
@@ -12,3 +12,4 @@ export g16root=$GILLIARDLAB/opt/chemistry/Gaussian16_A03/
 export GAUSS_EXEDIR=$g16root/g16
 export GAUSS_SCRDIR=$g16root/scr
 export PATH=$PATH:$GAUSS_EXEDIR
+

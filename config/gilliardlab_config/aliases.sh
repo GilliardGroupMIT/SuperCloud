@@ -1,9 +1,9 @@
-export GILLIARDLAB=/home/gridsan/groups/gilliardlab
+GILLIARDLAB=/home/gridsan/groups/gilliardlab
 
 # Group Aliases
 alias stream='less -S +F'
 alias jobstat='$GILLIARDLAB/opt/utilities/jobstat.sh'
-alias submit='$GILLIARDLAB/opt/utilities/slurm_scripts/submit.sh'
+alias submit='$GILLIARDLAB/opt/utilities/submit.sh'
 
 rename() {
     local from=$1
