@@ -29,12 +29,14 @@ $ nano .bashrc
 At the end of the .bashrc file, add the following lines. Note that spacing is important, and the lines beginning with a period are indented. It is best to copy and paste the lines below into your .bashrc rather than typing them out to avoid typos.
 
 ```
-if [ -f $HOME/gilliardlab_shared/.config/gilliardlab_config/aliases.sh ]; then
-    . $HOME/gilliardlab_shared/.config/gilliardlab_config/aliases.sh
+export GILLIARDLAB=/home/gridsan/groups/gilliardlab
+
+if [ -f $GILLIARDLAB/.config/gilliardlab_config/env_vars.sh ]; then
+    . $GILLIARDLAB/.config/gilliardlab_config/env_vars.sh
 fi
 
-if [ -f $HOME/gilliardlab_shared/.config/gilliardlab_config/env_vars.sh ]; then
-    . $HOME/gilliardlab_shared/.config/gilliardlab_config/env_vars.sh
+if [ -f $GILLIARDLAB/.config/gilliardlab_config/aliases.sh ]; then
+    . $GILLIARDLAB/.config/gilliardlab_config/aliases.sh
 fi
 ```
 
@@ -52,8 +54,8 @@ You should see a list of aliases. It should look something like this (note that 
 
 ```
 $ alias
-alias copyg16='cp $HOME/gilliardlab_shared/opt/utilities/slurm_scripts/slurm_gaussian16.sh'
-alias copyorca='cp $HOME/gilliardlab_shared/opt/utilities/slurm_scripts/slurm_orca504.sh'
+alias copyg16='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_gaussian16.sh'
+alias copyorca='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_orca504.sh'
 alias stream='less -S +F'
 ```
 
@@ -67,5 +69,5 @@ You should see something like this:
 
 ```
 $ echo $ORCA_PATH
-/home/gridsan/amolino/gilliardlab_shared/opt/chemistry/Orca_504
+/home/gridsan/groups/gilliardlab/gilliardlab_shared/opt/chemistry/Orca_504
 ```
