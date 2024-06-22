@@ -1,3 +1,5 @@
+#!/bin/bash
+
 GILLIARDLAB=/home/gridsan/groups/gilliardlab
 
 # Group Aliases
@@ -21,3 +23,9 @@ alias copyorca='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_orca504.sh'
 
 ### Gaussian 16
 alias copyg16='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_gaussian16.sh'
+
+### Crest 3.0.1
+alias copycrest='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_crest301.sh'
+
+### GIMIC 2.2.1
+alias copygimic='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_gimic221.sh'
