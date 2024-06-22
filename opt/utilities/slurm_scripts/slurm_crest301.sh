@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=4
-#SBATCH --time=00:20:00
+#SBATCH --ntasks-per-node=16
+#SBATCH --time=06:00:00
 #SBATCH --mem=66GB
 #SBATCH --output=/dev/null
 
