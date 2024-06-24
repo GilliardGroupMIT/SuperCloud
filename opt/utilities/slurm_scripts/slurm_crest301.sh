@@ -8,7 +8,7 @@
 xyz_file="*.xyz"
 
 #=============================#
-solvent="H2O"
+solvent="CH2Cl2"
 level_of_theory="gfn2"
 charge=0 # See CREST documentation for more information on specifying multiplicity (--uhf <int>)
 #=============================#
@@ -16,7 +16,7 @@ charge=0 # See CREST documentation for more information on specifying multiplici
 module purge
 
 GILLIARDLAB=/home/gridsan/groups/gilliardlab
-CREST_PATH=$GILLIARDLAB/opt/chemistry/crest301
+CREST_PATH=$GILLIARDLAB/opt/chemistry/crest_301
 
 JOBDIR="$PWD"
 export JOBDIR
