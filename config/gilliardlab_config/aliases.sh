@@ -20,6 +20,7 @@ rename() {
 
 ### ORCA 5.0.4
 alias copyorca='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_orca504.sh'
+alias conv='egrep --color "YES|      NO|GEOMETRY OPTIMIZATION CYCLE|HURRAY|THE OPTIMIZATION HAS CONVERGED|ORCA TERMINATED NORMALLY|ORCA finihed with error|Optimization Cycle: |N\(occ\)="'
 
 ### Gaussian 16
 alias copyg16='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_gaussian16.sh'
