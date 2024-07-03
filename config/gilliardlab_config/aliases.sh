@@ -24,6 +24,7 @@ alias conv='egrep --color "YES|      NO|GEOMETRY OPTIMIZATION CYCLE|HURRAY|THE O
 
 ### Gaussian 16
 alias copyg16='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_gaussian16.sh'
+alias gview='$GILLIARDLAB/opt/chemistry/gaussview6/gview.exe &'
 
 ### Crest 3.0.1
 alias copycrest='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_crest301.sh'
