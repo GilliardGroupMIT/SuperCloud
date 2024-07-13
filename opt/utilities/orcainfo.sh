@@ -5,15 +5,17 @@ usage() {
     exit 1
 }
 
-while getopts ":o:l:" opt; do
+output=""
+extended=0
+
+while getopts ":o:e" opt; do
     case $opt in
         o)
             output=$OPTARG
             echo "output file: $output" >&2
             ;;
-        l)
-            extended=$OPTARG
-            echo "Extended output: $extended" >&2
+        e)
+            extended=1
             ;;
         \?)
             echo "Error: Invalid option: -$OPTARG" >&2
@@ -26,12 +28,20 @@ while getopts ":o:l:" opt; do
     esac
 done
 
-if [ $OPTIND -eq 1 ]; then
-    echo "No options were passed"
+if [ -z "$output" ]; then
+    echo "ERROR: The -o option is required" >&2
     usage
 fi
 
+if [ ! -f "$output" ]; then
+    echo "ERROR: The specified output file does not exist: $output" >&2
+    exit 1
+fi
+
 shift $((OPTIND -1))
+
+# initialise variables
+electronic_energy=0
 
 echo "============================================="
 if grep -q "THE OPTIMIZATION HAS CONVERGED" "$output"; then
@@ -83,3 +93,17 @@ echo "============================================="
 runtime=$(grep "TOTAL RUN TIME" "$output" | awk '{printf "%s %s %s %s %s %s %s %s", $4, $5, $6, $7, $8, $9, $10, $11}')
 echo "Run Time: $runtime"
 echo "============================================="
+
+if [ $extended -eq 1 ]; then
+    number_of_basis_functions=$(grep -m 1 "Number of basis functions" "$output" | awk '{print $6}')
+    number_of_atoms=$(grep -m 1 "Number of atoms" "$output" | awk '{print $5}')
+    working_directory=$PWD
+
+    printf "Number of basis functions: %.0f\n" "$number_of_basis_functions"
+    printf "Number of atoms          : %.0f\n" "$number_of_atoms"
+    printf "Working Directory        : %s\n" "$working_directory"
+    echo "============================================="
+
+    printf "%s =%.6f =%.6f =%.6f =%.6f =%.6f =%.0f =%.0f\n" "$working_directory" "$electronic_energy" "$zero_point_energy" "$enthalpy_correction" "$entropy_correction" "$gibbs_free_energy_correction" "$number_of_basis_functions" "$number_of_atoms"
+fi
+
