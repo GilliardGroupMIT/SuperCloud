@@ -2,6 +2,9 @@
 
 GILLIARDLAB=/home/gridsan/groups/gilliardlab
 
+export LS_COLORS=$LS_COLORS:'*.inp=0;33:*.out=0;31:*.run=0;33:*.log=0;31:*.xyz=0;35:*trj.xyz=0;0:*scfgrad.inp=0;0:*.res.*=0;36'
+export CLICOLOR=1
+
 export PATH=$PATH:GILLIARDLAB/.local/bin
 
 ### ORCA 5.0.4
