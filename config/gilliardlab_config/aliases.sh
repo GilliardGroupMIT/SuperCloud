@@ -19,11 +19,14 @@ rename() {
     done
 }
 
-### ORCA 5.0.4
-alias copyorca='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_orca504.sh'
+### ORCA
 alias conv='egrep --color "YES|      NO|GEOMETRY OPTIMIZATION CYCLE|HURRAY|THE OPTIMIZATION HAS CONVERGED|ORCA TERMINATED NORMALLY|ORCA finihed with error|Optimization Cycle: |N\(occ\)="'
 alias orcainfo='$GILLIARDLAB/opt/utilities/orcainfo.sh -o'
 alias ofakeg='$GILLIARDLAB/opt/utilities/OfakeG_V1.1.sh'
+### ORCA 5.0.4
+alias copy5orca='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_orca504.sh'
+### ORCA 6.0.0
+alias copyorca='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_orca600.sh'
 
 ### Gaussian 16
 alias copyg16='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_gaussian16.sh'
