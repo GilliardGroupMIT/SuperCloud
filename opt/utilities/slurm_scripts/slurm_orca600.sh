@@ -14,7 +14,7 @@ module purge
 module load mpi/openmpi-4.1.5
 
 GILLIARDLAB=/home/gridsan/groups/gilliardlab
-ORCA_PATH=$GILLIARDLAB/opt/chemistry/Orca_600_avx2/
+ORCA_PATH=$GILLIARDLAB/opt/chemistry/Orca_600_avx2
 NBOEXE=$GILLIARDLAB/opt/chemistry/NBO6/bin/nbo6.i4.exe
 
 JOBDIR="$PWD"
