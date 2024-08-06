@@ -9,7 +9,7 @@ export PATH=$PATH:GILLIARDLAB/.local/bin
 
 ### ORCA 6.0.0
 export ORCA_PATH=$GILLIARDLAB/opt/chemistry/Orca_600_avx2
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GILLIARDLAB/opt/chemistry/Orca_600_avx2
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GILLIARDLAB/opt/chemistry/Orca_504:$GILLIARDLAB/opt/chemistry/Orca_600_avx2
 export PATH=$PATH:$ORCA_PATH
 
 ### Gaussian16
