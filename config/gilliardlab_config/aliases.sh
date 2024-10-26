@@ -37,3 +37,10 @@ alias copycrest='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_crest301.sh'
 
 ### GIMIC 2.2.1
 alias copygimic='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_gimic221.sh'
+
+### Multiwfn 3.8
+alias multiwfn='$GILLIARDLAB/opt/chemistry/Multiwfn_3.8/Multiwfn_noGUI'
+
+### EDDB
+alias runeddb='OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 Rscript --vanilla $GILLIARDLAB/opt/chemistry/EDDB/RunEDDB.R'
+

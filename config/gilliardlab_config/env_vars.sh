@@ -21,5 +21,18 @@ export PATH=$PATH:$GAUSS_EXEDIR
 ### Crest 3.0.1
 export PATH=$PATH:$GILLIARDLAB/opt/chemistry/crest_301
 
+### GIMIC
+export PATH=$PATH:/home/gridsan/groups/gilliardlab/opt/chemistry/gimic_221/build/
+
 ### NBO6
 export NBOEXE=$GILLIARDLAB/opt/chemistry/NBO6/bin/nbo6.i4.exe
+
+### Multiwfn 3.8
+export Multiwfnpath=$GILLIARDLAB/opt/chemistry/Multiwfn_3.8
+export PATH=$PATH:$GILLIARDLAB/opt/chemistry/Multiwfn_3.8
+export OMP_STACKSIZE=200M
+ulimit -s unlimited
+
+### R
+export PATH=$PATH:$GILLIARDLAB/opt/utilities/R/R-4.4.1/bin
+
