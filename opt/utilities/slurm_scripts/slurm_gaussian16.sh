@@ -16,7 +16,7 @@ GILLIARDLAB=/home/gridsan/groups/gilliardlab
 export g16root=$GILLIARDLAB/opt/chemistry/Gaussian16_A03
 export GAUSS_EXEDIR=$g16root/g16
 export GAUSS_SCRDIR=$g16root/scr
-NBOEXE=$GILLIARDLAB/opt/chemistry/NBO6/bin/nbo6.i4.exe
+export PATH="$GILLIARDLAB/opt/chemistry/NBO6/NBO6.i8/bin:$PATH"
 
 JOBDIR="$PWD"
 export JOBDIR
