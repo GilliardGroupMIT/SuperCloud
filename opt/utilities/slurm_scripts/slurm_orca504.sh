@@ -15,7 +15,7 @@ module load mpi/openmpi-4.1.5
 
 GILLIARDLAB=/home/gridsan/groups/gilliardlab
 ORCA_PATH=$GILLIARDLAB/opt/chemistry/Orca_504
-NBOEXE=$GILLIARDLAB/opt/chemistry/NBO6/bin/nbo6.i4.exe
+NBOEXE=$GILLIARDLAB/opt/chemistry/NBO6/NBO6.i4/bin/nbo6.i4.exe
 
 JOBDIR="$PWD"
 export JOBDIR
