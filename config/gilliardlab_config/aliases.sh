@@ -44,3 +44,6 @@ alias multiwfn='$GILLIARDLAB/opt/chemistry/Multiwfn_3.8/Multiwfn_noGUI'
 ### EDDB
 alias runeddb='OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 Rscript --vanilla $GILLIARDLAB/opt/chemistry/EDDB/RunEDDB.R'
 
+### BCW
+alias bcw='python $GILLIARDLAB/opt/chemistry/bcwizard-main/bcw.py'
+alias copybcw='cp $GILLIARDLAB/opt/utilities/bcw_scripts/step1_bcw_nics.sh . && cp $GILLIARDLAB/opt/utilities/bcw_scripts/step2_bcw_currentdens.sh .'

@@ -2,7 +2,7 @@
 
 GILLIARDLAB=/home/gridsan/groups/gilliardlab
 
-export LS_COLORS=$LS_COLORS:'*.inp=0;33:*.out=0;31:*.run=0;33:*.log=0;31:*.xyz=0;35:*trj.xyz=0;0:*scfgrad.inp=0;0:*.res.*=0;36'
+export LS_COLORS=$LS_COLORS:'*.inp=0;33:*.com=0;33:*.out=0;31:*.run=0;33:*.log=0;31:*.xyz=0;35:*trj.xyz=0;0:*scfgrad.inp=0;0:*.res.*=0;36'
 export CLICOLOR=1
 
 export PATH=$PATH:GILLIARDLAB/.local/bin
@@ -36,3 +36,5 @@ ulimit -s unlimited
 ### R
 export PATH=$PATH:$GILLIARDLAB/opt/utilities/R/R-4.4.1/bin
 
+### Sysmoic
+export PATH=$PATH:$GILLIARDLAB/opt/chemistry/Sysmoic/STABIN/
