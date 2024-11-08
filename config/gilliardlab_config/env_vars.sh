@@ -7,10 +7,14 @@ export CLICOLOR=1
 
 export PATH=$PATH:GILLIARDLAB/.local/bin
 
-### ORCA 6.0.0
-export ORCA_PATH=$GILLIARDLAB/opt/chemistry/Orca_600_avx2
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GILLIARDLAB/opt/chemistry/Orca_504:$GILLIARDLAB/opt/chemistry/Orca_600_avx2
+### ORCA 6.0.1
+export ORCA_PATH=$GILLIARDLAB/opt/chemistry/Orca_601_avx2
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GILLIARDLAB/opt/chemistry/Orca_601_avx2
 export PATH=$PATH:$ORCA_PATH
+### ORCA 6.0.0
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GILLIARDLAB/opt/chemistry/Orca_600_avx2
+### ORCA 5.0.4
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GILLIARDLAB/opt/chemistry/Orca_504
 
 ### Gaussian16
 export g16root=$GILLIARDLAB/opt/chemistry/Gaussian16_A03
@@ -25,13 +29,14 @@ export PATH=$PATH:$GILLIARDLAB/opt/chemistry/crest_301
 export PATH=$PATH:/home/gridsan/groups/gilliardlab/opt/chemistry/gimic_221/build/
 
 ### NBO6
-export NBOEXE=$GILLIARDLAB/opt/chemistry/NBO6/bin/nbo6.i4.exe
+export NBOEXE=$PWD/opt/chemistry/NBO6/NBO6.i8/bin/nbo6.i8.exe
+export PATH=$PATH:$GILLIARDLAB/opt/chemistry/NBO6/NBO6.i8/bin/
 
 ### Multiwfn 3.8
-export Multiwfnpath=$GILLIARDLAB/opt/chemistry/Multiwfn_3.8
-export PATH=$PATH:$GILLIARDLAB/opt/chemistry/Multiwfn_3.8
-export OMP_STACKSIZE=200M
-ulimit -s unlimited
+# export Multiwfnpath=$GILLIARDLAB/opt/chemistry/Multiwfn_3.8
+# export PATH=$PATH:$GILLIARDLAB/opt/chemistry/Multiwfn_3.8
+# export OMP_STACKSIZE=200M
+# ulimit -s unlimited
 
 ### R
 export PATH=$PATH:$GILLIARDLAB/opt/utilities/R/R-4.4.1/bin
