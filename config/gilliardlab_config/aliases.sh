@@ -9,14 +9,14 @@ alias submit='$GILLIARDLAB/opt/utilities/submit.sh'
 alias fdd='$GILLIARDLAB/opt/utilities/fdd.sh'
 
 rename() {
-    local from=$1
-    local to=$2
-    shift 2
-    local files="$@"
-
-    for file in $files; do
-        $GILLIARDLAB/opt/utilities/rename.pl "s/$from/$to/" "$file"
-    done
+│   local from=$1
+│   local to=$2
+│   shift 2
+│   local files="$@"
+│
+│   for file in $files; do
+│   │   $GILLIARDLAB/opt/utilities/rename.pl "s/$from/$to/" "$file"
+│   done
 }
 
 ### ORCA
@@ -25,8 +25,13 @@ alias orcainfo='$GILLIARDLAB/opt/utilities/orcainfo.sh -o'
 alias ofakeg='$GILLIARDLAB/opt/utilities/OfakeG_V1.1.sh'
 ### ORCA 5.0.4
 alias copy5orca='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_orca504.sh'
+alias orca5_2mkl='$GILLIARDLAB/opt/chemistry/Orca_504/orca_2mkl'
 ### ORCA 6.0.0
-alias copyorca='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_orca600.sh'
+alias copy600orca='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_orca600.sh'
+alias orca600_2mkl='$GILLIARDLAB/opt/chemistry/Orca_600_avx2/orca_2mkl'
+### ORCA 6.0.1
+alias copyorca='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_orca601.sh'
+alias orca601_2mkl='$GILLIARDLAB/opt/chemistry/Orca_601_avx2/orca_2mkl'
 
 ### Gaussian 16
 alias copyg16='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_gaussian16.sh'
