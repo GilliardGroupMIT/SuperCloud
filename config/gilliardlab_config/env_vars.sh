@@ -29,8 +29,8 @@ export PATH=$PATH:$GILLIARDLAB/opt/chemistry/crest_301
 export PATH=$PATH:/home/gridsan/groups/gilliardlab/opt/chemistry/gimic_221/build/
 
 ### NBO6
-export NBOEXE=$PWD/opt/chemistry/NBO6/NBO6.i8/bin/nbo6.i8.exe
-export PATH=$PATH:$GILLIARDLAB/opt/chemistry/NBO6/NBO6.i8/bin/
+export NBOBIN=$GILLIARDLAB/opt/chemistry/NBO6/NBO6.i8/bin
+export NBOEXE=$GILLIARDLAB/opt/chemistry/NBO6/NBO6.i8/bin/nbo6.i8.exe
 
 ### Multiwfn 3.8
 # export Multiwfnpath=$GILLIARDLAB/opt/chemistry/Multiwfn_3.8
