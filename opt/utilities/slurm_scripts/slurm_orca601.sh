@@ -15,7 +15,7 @@ module load mpi/openmpi-4.1.5
 GILLIARDLAB=/home/gridsan/groups/gilliardlab
 ORCA_PATH=$GILLIARDLAB/opt/chemistry/Orca_601_avx2
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GILLIARDLAB/opt/chemistry/Orca_601_avx2
-NBOEXE=$GILLIARDLAB/opt/chemistry/NBO6/NBO6.i4/bin/nbo6.i4.exe
+NBOEXE=$GILLIARDLAB/opt/chemistry/NBO6/NBO6.i8/bin/nbo6.i8.exe
 
 if [ -z "$GILLIARDLAB" ]; then
     echo "Error: GILLIARDLAB environment variable is not set."
