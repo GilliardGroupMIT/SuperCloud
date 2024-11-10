@@ -23,6 +23,7 @@ rename() {
 alias conv='egrep --color "YES|      NO|GEOMETRY OPTIMIZATION CYCLE|HURRAY|THE OPTIMIZATION HAS CONVERGED|ORCA TERMINATED NORMALLY|ORCA finihed with error|Optimization Cycle: |N\(occ\)="'
 alias orcainfo='$GILLIARDLAB/opt/utilities/orcainfo.sh -o'
 alias ofakeg='$GILLIARDLAB/opt/utilities/OfakeG_V1.1.sh'
+
 ### ORCA 5.0.4
 alias copy5orca='cp $GILLIARDLAB/opt/utilities/slurm_scripts/slurm_orca504.sh'
 alias orca5_2mkl='$GILLIARDLAB/opt/chemistry/Orca_504/orca_2mkl'

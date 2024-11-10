@@ -2,17 +2,20 @@
 
 GILLIARDLAB=/home/gridsan/groups/gilliardlab
 
+# Colour settings for file extensions
 export LS_COLORS=$LS_COLORS:'*.inp=0;33:*.com=0;33:*.out=0;31:*.run=0;33:*.log=0;31:*.xyz=0;35:*trj.xyz=0;0:*scfgrad.inp=0;0:*.res.*=0;36'
 export CLICOLOR=1
 
-export PATH=$PATH:GILLIARDLAB/.local/bin
+[[ ":$PATH:" != *":$GILLIARDLAB/.local/bin:"* ]] && export PATH="$PATH:$GILLIARDLAB/.local/bin"
 
 ### ORCA 6.0.1
 export ORCA_PATH=$GILLIARDLAB/opt/chemistry/Orca_601_avx2
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GILLIARDLAB/opt/chemistry/Orca_601_avx2
-export PATH=$PATH:$ORCA_PATH
+[[ ":$PATH:" != *":$ORCA_PATH:"* ]] && export PATH="$PATH:$ORCA_PATH"
+[[ ":$LD_LIBRARY_PATH:" != *":$ORCA_PATH:"* ]] && export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$ORCA_PATH"
+
 ### ORCA 6.0.0
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GILLIARDLAB/opt/chemistry/Orca_600_avx2
+
 ### ORCA 5.0.4
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GILLIARDLAB/opt/chemistry/Orca_504
 
