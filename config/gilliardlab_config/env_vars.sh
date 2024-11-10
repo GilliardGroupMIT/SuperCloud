@@ -2,9 +2,20 @@
 
 GILLIARDLAB=/home/gridsan/groups/gilliardlab
 
-# Colour settings for file extensions
-export LS_COLORS=$LS_COLORS:'*.inp=0;33:*.com=0;33:*.out=0;31:*.run=0;33:*.log=0;31:*.xyz=0;35:*trj.xyz=0;0:*scfgrad.inp=0;0:*.res.*=0;36'
+# Enable colorized output
 export CLICOLOR=1
+
+# Color settings for file extensions
+export LS_COLORS="$LS_COLORS"\
+':*.inp=0;33'\
+':*.com=0;33'\
+':*.out=0;31'\
+':*.run=0;33'\
+':*.log=0;31'\
+':*.xyz=0;35'\
+':*trj.xyz=0;0'\
+':*scfgrad.inp=0;0'\
+':*.res.*=0;36'
 
 [[ ":$PATH:" != *":$GILLIARDLAB/.local/bin:"* ]] && export PATH="$PATH:$GILLIARDLAB/.local/bin"
 
